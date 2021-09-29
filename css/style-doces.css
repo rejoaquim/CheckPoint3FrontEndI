@@ -1,0 +1,32 @@
+.banner-doce{
+    background: url('../img/doce.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 112px);
+    opacity: 0.85;
+}
+
+.conteudo{
+    background: #000;
+    color: #FFF;
+}
+
+.conteudo > div{
+    transition: all .5s ease-in-out;
+}
+
+.conteudo > div:hover{
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+
+.descricao{
+    text-align: center;
+}
+
+.doce-imagem img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    
+}

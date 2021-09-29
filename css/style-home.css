@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+
+#myCarousel img{
+	height: calc(100vh - 155px);
+	width: 100%;
+	
+}
+
+.carousel {
+	margin-bottom: 4rem;
+	background-color: #000;
+}
+
+
+.caixa1, .caixa2, .caixa3, 
+.caixa4, .caixa5, .caixa6,
+.caixa7
+{
+	height: 100vh;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.caixa1 {
+	background-image:  url('../img/hamburguer.jpg');
+}
+
+.caixa2{
+	background-image: url('../img/sandwich.jpg');
+}
+
+.caixa3{
+    background-image: url('../img/pizza.jpg');
+}
+
+.caixa4{
+	background-image: url('../img/carne2.jpg');
+}
+
+.caixa5{
+	background-image: url('../img/salada.jpg');
+}
+
+.caixa6{
+	background-image: url('../img/doce.jpg');
+}
+
+.caixa7{
+	background-image: url('../img/bebidas.jpg');
+}
+
+.conteudo{
+    background: #000000;
+    color: #FFF;
+}
+
+.conteudo h2{
+	font-family: 'Merienda', cursive;
+}
+
+.conteudo p{
+	font-size: 1.5rem;
+}
+
+@media (max-width: 768px){
+	.conteudo p{
+		font-size: 1.3rem;
+	}
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamma Mia - Contato</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-contato.css">
+
+  <style>
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: #231C80CC; /* Black w/ opacity */
+
+}
+
+/* Modal Content  */
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal_form{
+    position: relative;
+    flex-basis: 50%;
+    padding: 40px 20px;
+    margin: auto 0;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 2.8em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
+      <div class="container  d-flex align-items-center">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo.png" alt="Logotipo Site">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active disabled" href="contato.html">Contato</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="row text-center d-flex justify-content-between align-items-center pt-5">
+
+        <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+          <h2 class="display-4">Já fez o seu pedido hoje?</h2>
+          <p class="lead my-3">Não fique com fome, peça a sua comida e entregaremos na sua casa!
+            O que você ainda está esperando?? <strong>Peça já!!</strong>
+          </p>
+          <img class="form-imagem d-none d-lg-block" src="../img/form.jpg" alt="">
+        </div>
+
+        <div class="col-md-7 col-sm-12 py-4">
+
+          <h4 class="mb-3">Seus Dados</h4>
+
+          <hr class="my-4">
+
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+
+              <div class="col-sm-5">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="cep" placeholder="CEP (Somente Números)" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+
+              <div class="col-sm-10">
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Rua..." disabled>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                <label for="zip" class="form-label">Número</label>
+                <input type="text" class="form-control" id="numero" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <label for="state" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" placeholder="Bairro" disabled>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12"">
+                <label for=" country" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" placeholder="cidade" disabled>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12"">
+                <label for=" state" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="estado" placeholder="Estado" disabled>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <label for="address2" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="complemento" placeholder="Apartamento, Casa..">
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="col-sm-12">
+              <label for="pedido" class="form-label">Descreva seu Pedido Aqui</label>
+              <textarea class="form-control" placeholder="" id="pedido" style="height: 100px"></textarea>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+              <div class="col-6">
+                <button class="w-100 btn btn-lg mt-2" type="submit" data-submit>Enviar</button>
+              </div>
+              <div class="col-6">
+                <button class="w-100 btn btn-secondary btn-lg mt-2" type="reset">Cancelar</button>
+              </div>
+            </div>
+
+            <div id="alert" class="d-flex justify-content-center align-items-center"></div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </main>
+
+  <footer>
+    Todos os direitos reservados &copy;
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="../js/form.js"></script>
+</body>
+
+</html>

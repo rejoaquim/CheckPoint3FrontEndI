@@ -1,0 +1,33 @@
+.banner-carnes{
+    background: url('../img/carnes/carnes.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 155px);
+    opacity: 0.85;
+}
+
+.conteudo{
+    background: #000;
+    color: #FFF;
+}
+
+.conteudo > div{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.conteudo > div:hover{
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+
+.descricao{
+    text-align: center;
+}
+
+.carne-imagem img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    
+}

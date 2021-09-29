@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+
+.form-imagem{
+    width: 350px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: 'Merienda', cursive;
+    color: lightcoral;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.btn[type="submit"] {
+    background-color: lightcoral;
+    color: #FFF;
+    transition: all .5s ease-in-out;
+}
+
+.btn[type="submit"]:hover {
+    background-color: #e64343;
+    color: #FFF;
+}
+
+#alert h3{
+    border-radius: 15px;
+    padding: 5px 10px;
+    animation: aviso 1s ease-in-out ;
+}
+
+@keyframes aviso {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .form-imagem {
+        width: 250px;
+    }
+}

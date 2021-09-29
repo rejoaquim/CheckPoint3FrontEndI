@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    background: lightcoral;
+    color: #FFF;
+    padding: 20px 10px;
+}
+
+.navbar-brand img{
+    width: 250px;
+}
+
+#menu li a{
+    border-radius: 10px;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: all .5s ease-in-out;
+}
+
+#menu li a:hover{
+       color: #FFF;
+}
+
+#menu .ativa{
+    border-bottom: 5px solid #FFF;
+}
+
+footer{ 
+    align-items: center;
+    background: lightcoral;
+    color: #FFF;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+

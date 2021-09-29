@@ -1,0 +1,32 @@
+.banner-hamburguer {
+  background: url('../img/hamburguer.jpg') no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 155px);
+  opacity: 0.85;
+}
+
+.conteudo {
+  background: #000;
+  color: #fff;
+}
+
+.conteudo > div {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.conteudo > div:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.descricao {
+  text-align: center;
+}
+
+.hamburguer-imagem img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
